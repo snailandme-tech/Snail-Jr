@@ -52,7 +52,7 @@ export default {
 
       const embed = new EmbedBuilder()
         .setTitle('🏆 Level Leaderboard')
-        .setColor('#2ecc71')
+        .setColor('#25a0ef')
         .setDescription("Top 10 most active members in this server:")
         .setTimestamp();
 
