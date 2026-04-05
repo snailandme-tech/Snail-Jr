@@ -77,7 +77,7 @@ export default {
       );
 
       embed.addFields({
-        name: 'Rankings',
+        name: 'Leader Board',
         value: leaderboardText.join('\n')
       });
 
