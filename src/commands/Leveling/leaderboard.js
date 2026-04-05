@@ -51,7 +51,7 @@ export default {
       }
 
       const embed = new EmbedBuilder()
-        .setTitle('🏆 Level Leaderboard')
+        .setTitle('Level Leaderboard')
         .setColor('#25a0ef')
         .setDescription("Top 10 most active members in this server:")
         .setTimestamp();
@@ -64,9 +64,9 @@ export default {
             const xpForNextLevel = getXpForLevel(user.level + 1);
 
             let rankPrefix = `${index + 1}.`;
-            if (index === 0) rankPrefix = '🥇';
-            else if (index === 1) rankPrefix = '🥈';
-            else if (index === 2) rankPrefix = '🥉';
+            if (index === 0) rankPrefix = '1#';
+            else if (index === 1) rankPrefix = '2#';
+            else if (index === 2) rankPrefix = '3#';
             else rankPrefix = `**${index + 1}.**`;
 
             return `${rankPrefix} ${username} - Level ${user.level} (${user.xp}/${xpForNextLevel} XP)`;
