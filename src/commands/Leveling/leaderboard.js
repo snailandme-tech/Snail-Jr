@@ -64,9 +64,9 @@ export default {
             const xpForNextLevel = getXpForLevel(user.level + 1);
 
             let rankPrefix = `${index + 1}.`;
-            if (index === 0) rankPrefix = '1#';
-            else if (index === 1) rankPrefix = '2#';
-            else if (index === 2) rankPrefix = '3#';
+            if (index === 0) rankPrefix = ':one:';
+            else if (index === 1) rankPrefix = ':two:';
+            else if (index === 2) rankPrefix = ':three:';
             else rankPrefix = `**${index + 1}.**`;
 
             return `${rankPrefix} ${username} - Level ${user.level} (${user.xp}/${xpForNextLevel} XP)`;
